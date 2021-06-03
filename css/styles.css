@@ -133,8 +133,33 @@ button {
   padding: 0.25rem 0.5rem;
   cursor: pointer; }
 
+div .cuerpo {
+  /*background: rgb(85, 77, 29);*/
+  background: rgba(117, 92, 135, 0.56);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+  opacity: 80%;
+}
+
+.cuerpo p {
+  max-width: 40em;
+  font-family: Raleway, Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 1em;
+  letter-spacing: 0.075em;
+  opacity: 1;
+}
+@media screen and (min-width: 768px) {
+  .cuerpo p {
+    font-size: 1em; } }
+
 header {
   padding: 3.5rem 2rem;
+  margin-top: 10%;
   font-family: Raleway, Helvetica, sans-serif;
   text-transform: uppercase;
   color: white; }
