@@ -226,3 +226,78 @@ body {
 body::before {
   background-image: url("/img/overlay.png"), url("/img/bg.jpg"); }
 
+
+#cookieBannerDiv .cookieBannerBox span.cookieBannerMsg,
+#cookieBannerDiv .cookieBannerBox span.cookieBannerMsg a.cookieBannerLink {
+  color: rgb(51, 51, 51);
+  text-align: center;
+  font-style: italic;
+}
+
+div .cookieBannerBox.startEffect {
+  bottom: 0;
+}
+
+.cookieBannerBox {
+  background-color: rgb(237, 239, 245);
+  bottom: -85px;
+  display: inline-block;
+  left: 0;
+  right: 0;
+  align-items: center;
+  padding: 1em 1.8em;
+  width: 100%;
+  /*flex-direction: row;*/
+  position: fixed;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: Helvetica, Calibri, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  display: inline-block;
+  text-align: center;
+  /*display: flex;*/
+  /*flex-wrap: nowrap;*/
+  z-index: 9999;
+  box-shadow: #bbb 0px 0px 10px 2px;
+  transition: all 1s;
+}
+
+
+.cookieBannerMsg {
+  flex: 1;
+}
+
+.cookieBannerLink {
+  color: rgb(131, 131, 145);
+  color: initial;
+  opacity: .8;
+  display: inline-block;
+  padding: .2em;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.cookieBannerButton {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 0.5em;
+  font-style: normal;
+}
+
+.cookieBannerButton a {
+  min-width: 100px;
+  color: rgb(255, 255, 255);
+  background-color: #0077ab;
+  border-color: transparent;
+  /*flex: 1;*/
+  display: grid;
+  padding: .1em .8em;
+  font-size: 1.2em;
+  font-weight: 100;
+  border-width: 2px;
+  border-style: solid;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+}

@@ -74,7 +74,14 @@
             <i class="icon mail"></i>
           </a>
         </footer>
+        <div id="cookieBannerDiv">
+          <div id="cookieBannerBox" onclick="showOrHideDiv();"  class="cookieBannerBox startEffect"><span class="cookieBannerMsg">Nuestra web utiliza cookies para apoyar las características técnicas que mejoran su experiencia de usuario. Utilizamos también herramientas de análisis.</span>
+            <div class="cookieBannerButton" onclick="showOrHideDiv();"><span class="cookieBannerMsg"><a><span>cerrar</span></a></span></div>
+          </div>
+        </div>
+<!--        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
       </main>
+    </div>
 
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP2SEELRYT"></script>
@@ -85,6 +92,13 @@
 
         gtag('config', 'G-JP2SEELRYT');
       </script>
-    <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+      <script>
+        function showOrHideDiv() {
+          var v = document.getElementById("cookieBannerBox");
+          v.classList.remove("startEffect");
+          var v = document.getElementById("cookieBannerBox");
+          v.style.display = "none"
+        }
+      </script>
   </body>
 </html>
