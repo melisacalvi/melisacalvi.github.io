@@ -135,7 +135,7 @@ button {
 
 div .cuerpo {
   /*background: rgb(85, 77, 29);*/
-  background: rgba(183, 142, 198, 0.71);
+  background: rgba(111, 52, 131, 0.71);
   display: grid;
   justify-content: center;
   align-items: center;
@@ -152,11 +152,16 @@ div .cuerpo {
   line-height: 1em;
   letter-spacing: 0.075em;
   opacity: 1;
-  text-shadow: #000000 1em 0 10em;
+  text-shadow: #000000 2em 0 15em;
 }
 @media screen and (min-width: 768px) {
   .cuerpo p {
     font-size: 1em; } }
+
+p.firma {
+  text-align: end;
+  font-weight: bold;
+}
 
 header {
   padding: 3.5rem 2rem;
@@ -168,7 +173,9 @@ header {
     font-size: 2.5em;
     font-weight: 800;
     line-height: 1.25em;
-    letter-spacing: 0.075em; }
+    letter-spacing: 0.075em;
+    text-shadow: #000000 2em 0 5em;
+  }
     @media screen and (min-width: 768px) {
       header h1 {
         font-size: 3em; } }
@@ -179,14 +186,21 @@ header {
       height: 2px;
       margin: 0.5em auto 0;
       position: relative;
-      width: 4em; }
+      width: 4em;
+      text-shadow: #000000 2em 0 5em;
+    }
   header h2 {
     margin: 1.75em 0 0;
     line-height: 1.25em;
     letter-spacing: 0.05em;
     font-size: 1.25em;
-    font-weight: 700; }
+    font-weight: 700;
+    text-shadow: #000000 2em 0 5em;
+  }
 
+footer {
+  margin-bottom: 20px;
+}
 footer .link {
   display: inline-block;
   margin: 0 0 0 0.5rem;
@@ -240,7 +254,7 @@ div .cookieBannerBox.startEffect {
 }
 
 .cookieBannerBox {
-  background-color: rgb(237, 239, 245);
+  background-color: rgb(237, 239, 245, 0.7);
   bottom: -85px;
   display: inline-block;
   left: 0;
@@ -254,7 +268,7 @@ div .cookieBannerBox.startEffect {
   box-sizing: border-box;
   font-family: Helvetica, Calibri, Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.5em;
+  line-height: 1em;
   text-align: center;
   /*display: flex;*/
   /*flex-wrap: nowrap;*/
