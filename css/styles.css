@@ -121,7 +121,7 @@ textarea::placeholder {
   color: #b7b7b7; }
 
 button {
-  margin: 20px auto 0px;
+  margin: 20px auto 0;
   width: 50%;
   border: 0;
   border-radius: 0.25rem;
@@ -135,7 +135,7 @@ button {
 
 div .cuerpo {
   /*background: rgb(85, 77, 29);*/
-  background: rgba(196, 174, 206, 0.71);
+  background: rgba(183, 142, 198, 0.71);
   display: grid;
   justify-content: center;
   align-items: center;
@@ -152,6 +152,7 @@ div .cuerpo {
   line-height: 1em;
   letter-spacing: 0.075em;
   opacity: 1;
+  text-shadow: #000000 1em 0 10em;
 }
 @media screen and (min-width: 768px) {
   .cuerpo p {
@@ -220,7 +221,7 @@ body {
     background-color: #313a3d;
     background-attachment: fixed, fixed;
     background-position: top left, center center;
-    background-repeat: repeat, none;
+    background-repeat: repeat, no-repeat;
     background-size: auto, cover; }
 
 body::before {
@@ -254,12 +255,11 @@ div .cookieBannerBox.startEffect {
   font-family: Helvetica, Calibri, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5em;
-  display: inline-block;
   text-align: center;
   /*display: flex;*/
   /*flex-wrap: nowrap;*/
   z-index: 9999;
-  box-shadow: #bbb 0px 0px 10px 2px;
+  box-shadow: #bbb 0 0 10px 2px;
   transition: all 1s;
 }
 
@@ -270,7 +270,6 @@ div .cookieBannerBox.startEffect {
 
 .cookieBannerLink {
   color: rgb(131, 131, 145);
-  color: initial;
   opacity: .8;
   display: inline-block;
   padding: .2em;
