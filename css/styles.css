@@ -239,7 +239,7 @@ body {
     background-size: auto, cover; }
 
 body::before {
-  background-image: url("/img/overlay.png"), url("/img/bg.jpg"); }
+  background-image: url("/img/overlay.png"), url("/img/bg.jpg?timestamp=20241010"); }
 
 
 #cookieBannerDiv .cookieBannerBox span.cookieBannerMsg,
