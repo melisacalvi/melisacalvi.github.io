@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP2SEELRYT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-JP2SEELRYT');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melisa Calvi - Todos mis enlaces</title>
@@ -764,10 +774,10 @@
                 navigator.share({
                     title: 'Melisa Calvi - Música Católica',
                     text: '¡Descubre la música de Melisa Calvi! ✝️🎵',
-                    url: window.location.href
+                    url: globalThis.location.href
                 });
             } else {
-                navigator.clipboard.writeText(window.location.href).then(() => {
+                navigator.clipboard.writeText(globalThis.location.href).then(() => {
                     const btn = document.querySelector('.share-btn');
                     const original = btn.innerHTML;
                     btn.innerHTML = '<i class="fas fa-check"></i>';
